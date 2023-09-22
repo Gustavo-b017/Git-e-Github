@@ -1,0 +1,8 @@
+como subir arquivos para o github
+
+git status - 
+git add . - para todos os arquivos
+git status
+git commit -m "nome do commit"
+git status
+git push origin nome_branch
