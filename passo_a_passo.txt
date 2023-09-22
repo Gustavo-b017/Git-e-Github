@@ -1,0 +1,36 @@
+## clonando um repositorio
+
+1. copie a URL do repositorio do github
+2. crie uma pasta no pc 
+3. abra a pasta, e com o botao direito abra pelo vs code 
+4. abri um novo terminal
+5. coloque o terminal no bash
+6. coloque o comando: git clone "URL do repositorio"
+7. na pasta criada, com o botao direito abra pelo vs code pela segunda vez
+
+#fim da clonagem do repositorio
+-------------------------------------------------------------------------------------------------
+// verifica todas as branch
+git branch --all
+
+// verifica as branch local
+git branch
+
+// crindo uma nova branch
+git checkout -b "nome_da_branche"
+
+branch - local seguro, onde pode ter bugs e codigos novos sem afetar o repositorio principal
+--------------------------------------------------------------------------------------------------
+
+## subindo um arquivo
+// -m (serve para comentar o nome do commit)
+
+1. git status
+2. git add .
+3. git status
+4. git commit -m "algo para vc identificar o commit"
+5. git status
+6. git push origin nome_da_branch_criado_anteriomente
+
+
+
