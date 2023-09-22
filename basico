@@ -1,0 +1,132 @@
+### aprendendo a mexer com o git e github na pratica:
+
+## Usando o git:
+
+// leia as OBS no final do arquivo
+
+1. crie uma pasta e a nomeie
+
+--------
+2. aperte o botao direito e à abra com o vs code
+
+--------
+3. escreva no seu arquivo algo que queira salvar
+
+--------
+4. vinculando um repositorio local com o github:
+
+	1. na pasta criada, aperte o botao direito e abra com o git bash here
+	
+	2. ja esta na pasta, porem se n estiver de o comando: "cd 'caminho da pasta'"
+
+	3. git init -- inicia um repositorio git vazio
+
+	4. git add "nome_do_arquivo" ou "." -- arquivo salvo esperando o commit (apresentacao no  palco); 
+		(".") --> todos os arquivos
+	
+	5. git status - costra o estado do git, se esta salvo ou nao
+	
+	6. git commit -m "nome de referencia das versoes" -- cria um ponto de referencia na linha do tempo do codigo das versoes salvas
+	
+	7. git status
+	
+	8. git (remote) add origin "link do repositorio" -- add um repositorio do github
+		(remote) - necessario somente na primeira vez 
+		
+	9. git push (-u) origin "nome_da_branch"
+
+----------
+5. para criar uma nova branch:
+
+	1. git checkout -b "nome_da_nova_branch" - cria uma nova branch, sai da atual, e vai para a nova
+----------
+6. para mudar a branch:
+
+	1. git checkout "nome_da_branch_que_deseja_voltar"
+----------
+7. para juntar duas branch:
+
+	1. git checkout "main" - mudar a main (branch principal)
+	
+	2. git merge "branch que deseja juntar a branch atual" - junta a branch escolhida para se juntar a atual
+----------
+8. para mudar o nome da branch:
+
+	1. git branch -M "nova branch" --> mudar de (master) -> (main)
+
+----------
+9. para salvar as alteracoes:
+
+	1. git status - verifica se o arquivo esta pronto para o commit
+	
+	2. git add . - direciona todos os arquivos para o commit
+
+	3. git status
+
+	4. git commit -m "nome referencia da alteracao" -- salva localmente
+
+	5. git push origin "nome da branch" -- salva no github
+---------
+10. Clonando um repositorio:
+	
+	1. abra o github, e vai no repositorio que deseja clonar
+
+	2. vai em code, e copia o link do repositorio
+
+	3. cria uma pasta para colocar o repositorio
+
+	4. botao direito e abra o git bash
+
+	5. git clone (link) - puxa os arquivos para a pasta criada
+
+---------
+11. atualizando o clone no pc local
+
+	1. cd "pasta onde esta o arquivo" - entra em uma pasta
+
+	2. git pull - puxa as alteracoes feitas no repositorio para o pc local
+
+----------------------------------------------------------------------------
+//obs: branch --> ramificacao do projeto original
+
+//obs: vc tem que estar na branch que deseja que junte
+	ex: 2 branch ["main","front-end"] --> muda para a main e depois junta as branch, caso contrario a main entrara na front-end
+
+//obs: clear --> limpa o terminal, para deixar menos poluido
+
+//obs: "-u" --> nao e mais necessario depois da primeira vez
+
+//obs: "remote" --> nao e mais necessario depois da primeira vez
+
+//obs: (-m) --> serve para poder escrever o nome da versao
+
+//obs: git ... --> para definir um comando do git
+
+//obs: ... remote ... --> conexao entre o repositorio local e do github
+
+//obs: ... origin --> nome/apelido do repositorio do github
+
+//obs: nome da branch priincipal: main
+
+//obs: pode ser usado pelo terminal do VS code; mas sera usado o Git Bash 
+
+//obs: Readme.md --> um arquivo para documentar sobre o projeto, especificacoes, ou como o codigo foi ou e montado
+
+// commit --> pontos na linha do tempo, sao versoes salvas do codigo
+
+//obs: apresentacao no palco (metafora): 
+	git status: ver se vc ja esta na fila
+	git add . : seria como colocar vc para ser o proximo a se apresentar
+	git commit -m "referencia": seria como te colocar no pe do palco e te apresentasse para a plateia
+	git push origin "branch": seria como se vc ja estivesse se apresentando a vista de todos
+---------------------------------------------------------------------------
+
+### GITHUB
+
+# fork - coloca um repositorio publico de outra pessoa no seus repositorios
+
+#pull request - solicita uma alteracao no repositorio de alguem, feito pelo fork
+
+----------------------------------------------------------------------------
+//obs: assim que vc da um fork, salva o projeto nos seus repositorios, vc pode alterar, mas so ira salvar localmente, para alterar em todos os 	repositorios deve solicitar um pull request
+----------------------------------------------------------------------------
